@@ -6,4 +6,4 @@
 (def date (LocalDateTime/now))
 (def formatter (DateTimeFormatter/ofPattern "yyyy-MM-dd HH:mm"))
 
-(str (first *command-line-args*) (.format date formatter))
+(println (str (first *command-line-args*) (.format date formatter)))
